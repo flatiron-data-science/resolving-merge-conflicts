@@ -5,7 +5,7 @@ class Snake:
 
 class Cobra(Snake):
     """Definitely dangerous, yup."""
-    
+    """KEVINS LOUD EDIT"""
     def bite(self, other):
         """Deliver a dose of venom."""
         return other + " is now very sick"
@@ -23,4 +23,8 @@ class BoaConstrictor(Snake):
     
 class BoatConstrictor(BoaConstrictor):
     """Loose snakes sink ships?"""
-    pass
+
+    def __init__(self):
+        """Create a new BoatConstrictor"""
+        super().__init__()
+        self.size = "enormous"
